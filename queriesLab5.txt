@@ -1,0 +1,126 @@
+37 ?- consult('C:/Users/wesam/Downloads/college/Artificial Intelligence Princi-FS02/WesamLab5.pl').
+true.
+
+
+------ father/2 ------
+
+38 ?- father(homer, bart).
+true.
+
+39 ?- father(abraham, homer).
+true.
+
+40 ?- father(marge, bart).
+false.
+
+------ mother/2 ------
+
+41 ?- mother(marge, bart).
+true.
+
+42 ?- mother(mona, homer).
+true.
+
+43 ?- 
+|    mother(homer, bart).
+false.
+
+------ son/2 ------
+
+44 ?- son(bart, homer).
+true.
+
+45 ?- son(homer, abraham).
+true.
+
+46 ?- son(lisa, homer).
+false.
+
+------ daughter/2 ------
+
+47 ?- daughter(lisa, homer).
+true.
+
+48 ?- daughter(maggie, marge).
+true.
+
+49 ?- daughter(bart, homer).
+false.
+
+------ brother/2 ------
+
+50 ?- brother(bart, lisa).
+true .
+
+51 ?- brother(homer, herb).
+true .
+
+52 ?- brother(lisa, bart).
+false.
+
+------ sister/2 ------
+
+53 ?- sister(lisa, bart).
+true .
+
+54 ?- sister(maggie, lisa).
+true .
+
+55 ?- sister(bart, lisa).
+false.
+
+------ grandfather/2 ------
+
+56 ?- grandfather(abraham, bart).
+true .
+
+57 ?- grandfather(clancy, bart).
+true .
+
+58 ?- grandfather(homer, bart).
+false.
+
+------ aunt/2 ------
+
+59 ?- aunt(patty, bart).
+true .
+
+63 ?- aunt(selma, lisa).
+true .
+
+64 ?- aunt(marge, bart).
+false.
+
+------ uncle/2 ------
+
+65 ?- uncle(herb, bart).
+true .
+
+66 ?-  uncle(bart, lisa).
+false.
+
+------ cousin/2 ------
+
+67 ?- cousin(bart, ling).
+true .
+
+68 ?- cousin(lisa, ling).
+true .
+
+69 ?- cousin(bart, lisa).
+false.
+
+------ ancestor/2 ------
+
+70 ?- ancestor(abraham, bart).
+true .
+
+71 ?- ancestor(homer, maggie).
+true .
+
+72 ?- ancestor(bart, abraham).
+false.
+
+73 ?- ancestor(abraham, ling).
+false.
+
